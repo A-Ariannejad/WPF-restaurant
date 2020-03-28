@@ -1,0 +1,126 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="201*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl  x:Name="tab" Grid.ColumnSpan="2">
+            <TabItem x:Name="P1" Header="Page 1" >
+                <Border Padding="10">
+                    <!--BUTTONS-->
+                    <StackPanel>
+                        <TextBlock Text="Buttons" FontWeight="Bold" Margin="0 0 0 10"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Margin="0 0 10 0" Grid.Column="0" Content="Save"/>
+                            <Button Margin="10 0 0 0" Grid.Column="1" Content="Load"/>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Margin="0 10 10 0" Grid.Column="0" Content="R"/>
+                            <Button Margin="10 10 0 0" Grid.Column="1" Content="New"/>
+                        </Grid>
+                        <!--list column1 column2 -->
+                        <TextBlock Text="List" FontWeight="Bold" Margin="0 10 0 0"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--column1-->
+                            <StackPanel Grid.Column="1" Margin="20 10 0 0">
+                                <TextBlock Text="Column 1" FontWeight="Bold" Margin="0 0 0 0"/>
+                                <CheckBox Content="thing 1" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 3" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 5" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 7" Margin="0 10 0 0"/>
+                            </StackPanel>
+                            <!--column2-->
+                            <StackPanel Grid.Column="2" Margin="20 10 0 0">
+                                <TextBlock Text="Column 2" FontWeight="Bold" Margin="0 0 0 0"/>
+                                <CheckBox Content="thing 2" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 4" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 6" Margin="0 10 0 0"/>
+                                <CheckBox Content="thing 8" Margin="0 10 0 0"/>
+                            </StackPanel>
+                            <ComboBox Padding="2" Height="20" VerticalAlignment="Top" Margin="0 10 0 0"/>
+                        </Grid>
+                        <!--Text-->
+                        <TextBlock Grid.Column="0" Text="Text" FontWeight="Bold" Margin="0 30 0 0"/>
+                        <TextBox Padding="2" AcceptsReturn="True" TextWrapping="Wrap" Height="120" Margin="0 10 0 0"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Name="NEXT" Click="NEXT_Click"  Margin="0 10 0 0" Grid.Column="1" Content="Next Tab"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </TabItem>
+            <TabItem x:Name="P2" Header="Page 2" >
+                <Border Padding="10">
+                    <StackPanel>
+                        <TextBlock Text="Text block" FontWeight="Bold"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Name :" FontWeight="Bold" Margin="0 10 0 0"/>
+                            <TextBox Grid.Column="1" Padding="2" Margin="0 10 0 0"/>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Family :" FontWeight="Bold" Margin="0 20 0 0"/>
+                            <TextBox Grid.Column="1" Padding="2" Margin="0 20 0 0"/>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Age :" FontWeight="Bold" Margin="0 20 0 0"/>
+                            <TextBox Grid.Column="1" Padding="2" Margin="0 20 0 0"/>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="equations :" FontWeight="Bold" Margin="0 20 0 0"/>
+                            <TextBox Grid.Column="1" Padding="2" AcceptsReturn="True" TextWrapping="Wrap" Height="120" Margin="0 20 0 0"/>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Picture :" FontWeight="Bold" Margin="0 20 0 0"/>
+                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/3/30/Googlelogo.png" Stretch="Uniform" Margin="66,30,0,0" 
+                                   Height="150" HorizontalAlignment="Center" Width="300" Grid.ColumnSpan="2" />
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

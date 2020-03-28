@@ -1,0 +1,14 @@
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Arshia\Desktop\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Arshia\Desktop\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Arshia\Desktop\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Arshia\Desktop\WpfApp1\obj\Debug\WpfApp1.pdb
